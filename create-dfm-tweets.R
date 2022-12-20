@@ -1,7 +1,6 @@
 require(readtext)
 require(quanteda)
 library(rtweet)
-library(ggplot2)
 library(tidyverse)
 library(quanteda.textplots)
 
