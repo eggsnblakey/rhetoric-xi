@@ -11,7 +11,11 @@ folder_path <- file.path("tweeps/accts")
 # Retrieve the timelines of the accounts
 for (screen_name in screen_names) {
   # Retrieve the timeline of the current account
+<<<<<<< HEAD
   timeline <- get_timeline(screen_name, n = 100, include_rts = FALSE)
+=======
+  timeline <- get_timeline(screen_name, n = 1500, include_rts = FALSE)
+>>>>>>> main
   
   user_timeline <- cbind(timeline, users_data(timeline)[, c("screen_name")])
   
