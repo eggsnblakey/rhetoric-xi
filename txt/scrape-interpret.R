@@ -2,7 +2,7 @@ library(rvest)
 library(readr)
 library(dplyr)
 
-testy_xi <- read_html("https://interpret.csis.org/translations/?_paged=6")
+testy_xi <- read_html("https://interpret.csis.org/translations/?_paged=1")
 
 links <- html_nodes(testy_xi, "a")
 

@@ -21,3 +21,4 @@ df <- bind_cols(node1_text, node2_text, node3_text)
 
 # Write the data frame to a CSV file
 write_csv(df, "txt/interpret/combined-interpret.csv")
+
