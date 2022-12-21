@@ -1,8 +1,0 @@
-# Print a prompt for the user
-print("Enter a value:")
-
-# Read a line of input from the user and assign it to a variable
-value <- readline()
-
-# Print the value that the user entered
-print(paste("You entered:", value))
