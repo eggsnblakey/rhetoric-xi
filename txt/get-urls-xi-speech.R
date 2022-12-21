@@ -2,7 +2,7 @@ library(rvest)
 library(readr)
 library(dplyr)
 
-testy_xi <- read_html("https://interpret.csis.org/translations/?_translation_tags=xi-jinping-speech&_paged=4")
+testy_xi <- read_html("https://interpret.csis.org/translations/?_paged=5")
 
 links <- html_nodes(testy_xi, "a")
 
@@ -25,7 +25,7 @@ extract_elements <- function(url) {
   filename <- paste0(substr(gsub("[^[:alnum:]]", "", url), 35, 65), ".txt")
   
   # Construct the path to the subfolder
-  subfolder <- file.path("txt/xi-speech")
+  subfolder <- file.path("txt/interpret")
   
   # Combine the path and the filename
   filepath <- file.path(subfolder, filename)
