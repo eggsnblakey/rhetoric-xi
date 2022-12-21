@@ -3,8 +3,6 @@
 library(rtweet)
 library(dplyr)
 library(readr)
-library(svDialogs)
-library(tcltk)
 
 auth <- rtweet_app()
 

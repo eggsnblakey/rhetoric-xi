@@ -1,4 +1,0 @@
-webpage <- read_html("https://interpret.csis.org/translations/analysis-of-changes-in-german-perceptions-of-china/")
-
-elements <- html_nodes(webpage, ".trans")
-print(elements)
