@@ -1,0 +1,4 @@
+library(svDialogs)
+## Ask something...
+user <- dlgInput("Who are you?", Sys.info()["user"])$res
+print(user)
