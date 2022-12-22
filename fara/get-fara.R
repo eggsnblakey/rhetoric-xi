@@ -1,7 +1,7 @@
 library(httr)
 
 # Set the API endpoint URL
-url <- "https://efile.fara.gov/api/v1/Registrants/csv/Active"
+url <- "https://efile.fara.gov/api/v1/RegDocs/csv/7139"
 
 # Make the GET request
 response <- GET(url)
