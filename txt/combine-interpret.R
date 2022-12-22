@@ -2,7 +2,7 @@ library(dplyr)
 library(readr)
 
 # Set the path to the subfolder
-subfolder <- "txt/interpret"
+subfolder <- "txt/xi-speech"
 
 # Get a list of all the CSV files in the subfolder
 csv_files <- list.files(subfolder, pattern = "*.csv", full.names = TRUE)
@@ -16,4 +16,4 @@ for (file in csv_files) {
   df_combined <- bind_rows(df_combined, df)
 }
 
-write_csv(df_combined, "combined_data.csv")
+write_csv(df_combined, "txt/xi-speech/combined_data.csv")
