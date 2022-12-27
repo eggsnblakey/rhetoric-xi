@@ -16,9 +16,9 @@ corpus_xi <- corpus(xi_speeches)
 # Now that the corpus is created in R, it can be converted to tokens for various types of analysis.
 # The following examples include different ways of creating tokens from the corpus, including by words, sentences, and characters.
 
-#doc.tokens <- tokens(corpus_xi)
+doc.tokens <- tokens(corpus_xi)
 
-doc.tokens <- tokens(corpus_xi, what = "sentence")
+#doc.tokens <- tokens(corpus_xi, what = "sentence")
 
 # doc.tokens.character <- tokens(corpus_xi, what = "character")
 

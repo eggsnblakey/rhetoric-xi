@@ -1,7 +1,7 @@
 library(httr)
 
 # Set the API endpoint URL
-url <- "https://efile.fara.gov/api/v1/RegDocs/csv/6328"
+url <- "https://efile.fara.gov/api/v1/RegDocs/csv/7057"
 
 # Make the GET request
 response <- GET(url)
@@ -21,3 +21,17 @@ if (status_code == 200) {
 
 head(response)
 writeLines(response_data, "response6328.csv")
+
+library(plyr)
+library(stringr)
+
+files <- list.files()
+new_names <- gsub("china-hit", "", files)
+
+# Remove "china-hit" from the beginning of the filenames
+new_names <- gsub("^china-hit", "", files)
+
+# Rename the files
+for (i in 1:length(files)) {
+  file.rename(files[i], new_names[i])
+}
