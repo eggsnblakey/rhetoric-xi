@@ -12,7 +12,7 @@ folder_path <- file.path("tweeps/accts")
 for (screen_name in screen_names) {
   # Retrieve the timeline of the current account
   
-  timeline <- get_timeline(screen_name, n = 1500, include_rts = FALSE)
+  timeline <- get_timeline(screen_name, n = 5000, include_rts = FALSE)
   
   user_timeline <- cbind(timeline, users_data(timeline)[, c("screen_name")])
   

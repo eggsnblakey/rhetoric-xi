@@ -10,7 +10,7 @@ userid <- readline("Enter a screen name: ")
 
 folder_path <- file.path("tweeps/accts")
 
-timeline <- get_timeline(userid, n = 1500, include_rts = FALSE)
+timeline <- get_timeline(userid, n = 50000, include_rts = TRUE)
 
 user_timeline <- cbind(timeline, users_data(timeline)[, c("screen_name")])
 
