@@ -1,3 +1,5 @@
+# This returns a CSV file that includes all the FARA docs for a specified registratant
+
 library(httr)
 
 # Set the API endpoint URL
@@ -21,17 +23,3 @@ if (status_code == 200) {
 
 head(response)
 writeLines(response_data, "response6328.csv")
-
-library(plyr)
-library(stringr)
-
-files <- list.files()
-new_names <- gsub("china-hit", "", files)
-
-# Remove "china-hit" from the beginning of the filenames
-new_names <- gsub("^china-hit", "", files)
-
-# Rename the files
-for (i in 1:length(files)) {
-  file.rename(files[i], new_names[i])
-}
