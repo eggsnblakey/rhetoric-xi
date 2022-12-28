@@ -21,9 +21,11 @@ write.csv(selected, "selected2.csv")
 
 speech <- read_html("https://www.fmprc.gov.cn/mfa_eng/wjdt_665385/zyjh_665391/202212/t20221225_10994828.html")
 content <- html_nodes(speech, ".content")
+title <- html_nodes(speech, ".title")
 
-# Extract the text from the webpage
-text <- html_text(content)
+content <- html_text(content)
+title <- html_text(title)
+df <- data.frame(title, content)
 
 print(text)
 
