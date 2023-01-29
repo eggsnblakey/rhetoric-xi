@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 "Date Stamped","Registrant Name","Registration Number","Document Type","Short Form Name","Foreign Principal Name","Foreign Principal Country","Url"
 "04/04/2022","Vippi Media Inc.","7057","Supplemental Statement"," "," "," ","https://efile.fara.gov/docs/7057-Supplemental-Statement-20220404-1.pdf"
 "03/04/2022","Vippi Media Inc.","7057","Amendment"," "," "," ","https://efile.fara.gov/docs/7057-Amendment-20220304-1.pdf"
@@ -6,3 +7,13 @@
 "12/10/2021","Vippi Media Inc.","7057","Exhibit AB"," ","Consulate General of the People's Republic of China in New York","CHINA","https://efile.fara.gov/docs/7057-Exhibit-AB-20211210-1.pdf"
 "12/10/2021","Vippi Media Inc.","7057","Exhibit C"," "," "," ","https://efile.fara.gov/docs/7057-Exhibit-C-20211210-1.pdf"
 
+=======
+"Date Stamped","Registrant Name","Registration Number","Document Type","Short Form Name","Foreign Principal Name","Foreign Principal Country","Url"
+"04/04/2022","Vippi Media Inc.","7057","Supplemental Statement"," "," "," ","https://efile.fara.gov/docs/7057-Supplemental-Statement-20220404-1.pdf"
+"03/04/2022","Vippi Media Inc.","7057","Amendment"," "," "," ","https://efile.fara.gov/docs/7057-Amendment-20220304-1.pdf"
+"12/10/2021","Vippi Media Inc.","7057","Short-Form","Jaswal, Vipinder S."," "," ","https://efile.fara.gov/docs/7057-Short-Form-20211210-2.pdf"
+"12/10/2021","Vippi Media Inc.","7057","Registration Statement"," "," "," ","https://efile.fara.gov/docs/7057-Registration-Statement-20211210-1.pdf"
+"12/10/2021","Vippi Media Inc.","7057","Exhibit AB"," ","Consulate General of the People's Republic of China in New York","CHINA","https://efile.fara.gov/docs/7057-Exhibit-AB-20211210-1.pdf"
+"12/10/2021","Vippi Media Inc.","7057","Exhibit C"," "," "," ","https://efile.fara.gov/docs/7057-Exhibit-C-20211210-1.pdf"
+
+>>>>>>> main

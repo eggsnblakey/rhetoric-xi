@@ -38,7 +38,7 @@ doc.tokens <- tokens_select(doc.tokens, stopwords('english'),selection='remove')
 doc.tokens <- tokens_tolower(doc.tokens)
 
 # Read in the stopwords from a CSV file
-extrawords <- read.csv("junk.csv", stringsAsFactors = FALSE)
+extrawords <- read.csv("extra-stop.csv", stringsAsFactors = FALSE)
 extrawords <- unlist(extrawords)
 doc.tokens <- tokens_remove(doc.tokens, pattern = extrawords, valuetype = 'fixed')
 
@@ -49,3 +49,6 @@ junk <- topfeatures(doc.dfm.xi, 50)
 write.csv(junk, "junk6.csv")
 pizza <- kwic(doc.tokens, "multilateralism", window = 25)
 write.csv(pizza, "pizza.csv")
+
+textplot_wordcloud(doc.dfm.xi, min_count = 91)
+
